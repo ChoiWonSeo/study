@@ -3,6 +3,25 @@
     padding: 0;
 }
 
+#my_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 320px; 
+    margin-top: 130px;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+}
+
 label {
     font-size: 16pt;
     font-weight: 800;
@@ -16,9 +35,13 @@ input {
     border-radius: 10px;
 }
 
+/* placeholder 가운데 정렬 */
+/* .name,
+.town ::placeholder {
+    text-align: center;
+} */
+
 button {
-    margin-top: 10px;
-    margin-bottom: 20px;
     height: 30px;
     width: 100px;
     background-color: coral;
@@ -27,11 +50,36 @@ button {
     border-radius: 10px;
 }
 
-p {
-    margin-bottom: 5px;
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container p { 
     border: 1px solid coral;
     width: 270px;
     height: 25px;
     padding: 5px;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container button {
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+/* user btn 한 줄로 출력하기 */
+.container p,
+.container button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
